@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>test Mask-image</title>
+</head>
+	<style>
+		body{
+			background: #504C00;
+		}
+		.container{
+			  width: 1180px;
+			  height: auto;
+			  margin: 0 auto;
+			  margin-top:50px;
+			  display: grid;
+			  grid-template-columns: 1fr 1fr 1fr ;
+			  gap: 80px;
+			}
+		.grit {
+              -webkit-mask-image: linear-gradient(135deg,rgba(0,0,0,1) 15%, rgba(0,0,0,0.75) 80%);
+              mask-image: linear-gradient(135deg,rgba(0,0,0,1) 15%, rgba(0,0,0,0.75) 80%);
+}
+	
+		.grit2 {
+			  /* -webkit-mask-image: url("grit.png"); */
+			  -webkit-mask-image: url("AdobeStock_618311352_Preview1.png");
+			  mask-image:  url("AdobeStock_618311352_Preview1.png")
+            }	
+		.box {
+			  margin       : auto;
+			  width        : 400px;
+			  height       : 250px;  
+			  border-radius: 10px;
+			}
+		h1{
+			margin-top:80px;
+			margin-left: 150px;
+			font-family: "Georgia";
+			color:#efeedd;
+		}
+	
+		.sakura{
+			  background: #E9C9C9;
+		 }
+		.matcha{
+			  background: #BCB892;	
+		}
+		.moegi{
+			  background: #9CAD75;		
+		}
+		.sorairo{
+			background: #B2C2D4;
+		}
+		.fujimurasaki{
+			background: #AAA3C1;
+		}
+		
+		p{
+			font-family: "Georgia";
+			font-color:white;
+		}
+	
+		.sakura{
+			  background: #E9C9C9;
+		 }
+		.matcha{
+			  background: #BCB892;	
+		}
+		.moegi{
+			  background: #9CAD75;		
+		}
+		.sorairo{
+			background: #B2C2D4;
+		}
+		.fujimurasaki{
+			background: #AAA3C1;
+		}
+		.box2 {
+			  margin-top   :31.5px;
+			  margin-left: 50px;
+			  width        : 300px;
+			  height       : 187px;  
+			  border-radius: 10px;
+			}
+		.sakura2{
+			  background:#F2DEDE;
+		 }
+		.matcha2{
+			  background: #D7D5BD;	
+		}
+		.moegi2{
+			  background: #C4CEAC;		
+		}
+		.sorairo2{
+			background: #D1DAE5;
+		}
+		.fujimurasaki2{
+			background: #CCC8DA;
+		}
+		.neuglassmorphism{
+		margin-top: 70px;
+		margin-left: 60px;	
+		margin-bottom: 75px;
+		outline: solid #a7b97d;
+		outline-width: 0.1px;
+        border: none;
+		height:50px;
+		width:190px;
+		border-radius: 50px;
+		transform: scale(80%);
+			background:linear-gradient(to right , rgba(210, 181, 181, 0.2) 0%,rgba(249, 215, 215, 0.7) 100%);
+        box-shadow:  13px 13px 26px #c4a9a9,
+             -8px -8px 11px #ffe9e9;	
+	    }
+		.glass-sakura{	
+			background:linear-gradient(to right , rgba(210, 181, 181, 0.2) 0%,rgba(249, 215, 215, 0.7) 100%);
+        box-shadow:  13px 13px 26px #c4a9a9,
+             -8px -8px 11px #ffe9e9;	
+		}
+		.glass-matcha{
+			background:linear-gradient(to right , rgba(169, 166, 131, 0.2) 0%,rgba(201, 197, 156, 0.7) 100%);
+        box-shadow:  13px 13px 26px #9e9b7b,
+             -8px -8px 11px #dad5a9;	
+		}
+		.glass-moegi{
+			background:linear-gradient(to right , rgba(140, 156, 105, 0.2) 0%,rgba(167, 185, 125, 0.7) 100%);
+        box-shadow:  13px 13px 26px #839162,
+             -8px -8px 11px #b5c988;	
+		}
+		.glass-sorairo{
+			background:linear-gradient(to right , rgba(160, 175, 191, 0.2) 0%,rgba(190, 208, 227, 0.7) 100%);
+        box-shadow:  13px 13px 26px #96a3b2,
+             -8px -8px 11px #cee1f6;	
+		}
+		.glass-fujimurasaki{
+			background:linear-gradient(to right , rgba(153, 147, 174, 0.2) 0%,rgba(182, 174, 207, 0.7) 100%);
+        box-shadow:  13px 13px 26px #8f89a2,
+             -8px -8px 11px  #c5bde0;	
+		}
+		
+		
+	</style>
+
+<body>
+	<h1>Test: Mask image </h1>
+	<div class="container">
+		<div class="box sakura">
+			<div class="box2 grit2 sakura2">
+				<button class="neuglassmorphism glass-sakura">
+				 <p class="buttonName3">Requirement</p>
+				</button>
+			</div>
+		</div>
+		<div class="box matcha">
+		<div class="box2 grit2 matcha2">
+			    <button class="neuglassmorphism glass-matcha">
+				 <p class="buttonName3">Requirement</p>
+				</button>
+			</div>
+		</div>
+		<div class="box moegi">
+		<div class="box2 grit2 moegi2">
+			    <button class="neuglassmorphism glass-moegi">
+				 <p class="buttonName3">Requirement</p>
+				</button>
+			</div>
+		</div>
+		<div class="box sorairo">
+		<div class="box2 grit2 sorairo2">
+			    <button class="neuglassmorphism glass-sorairo">
+				 <p class="buttonName3">Requirement</p>
+				</button>
+			</div>
+		</div>
+		<div class="box fujimurasaki">
+		<div class="box2 grit2 fujimurasaki2">
+			<button class="neuglassmorphism glass-fujimurasaki">
+				 <p class="buttonName3">Requirement</p>
+				</button>
+			</div>
+		</div>
+	</div>
+	<h1>Test: Mask image with gradations</h1>
+	<div class="container">
+		<div class="box grit sakura">
+			<div class="box2 grit2 sakura2">
+				<button class="neuglassmorphism glass-sakura">
+				 <p class="buttonName3">Requirement</p>
+				</button>
+			</div>
+		</div>
+		<div class="box grit matcha">
+		<div class="box2 grit2 matcha2">
+			    <button class="neuglassmorphism glass-matcha">
+				 <p class="buttonName3">Requirement</p>
+				</button>
+			</div>
+		</div>
+		<div class="box grit moegi">
+		<div class="box2 grit2 moegi2">
+			    <button class="neuglassmorphism glass-moegi">
+				 <p class="buttonName3">Requirement</p>
+				</button>
+			</div>
+		</div>
+		<div class="box grit sorairo">
+		<div class="box2 grit2 sorairo2">
+			    <button class="neuglassmorphism glass-sorairo">
+				 <p class="buttonName3">Requirement</p>
+				</button>
+			</div>
+		</div>
+		<div class="box grit fujimurasaki">
+		<div class="box2 grit2 fujimurasaki2">
+			<button class="neuglassmorphism glass-fujimurasaki">
+				 <p class="buttonName3">Requirement</p>
+				</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
